@@ -28,7 +28,7 @@ class App < Sinatra::Base
     "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}."
   end
   
-  get "/reversename/:name" do
+  get "/:operation/:number1/:number2" do
     @reversename = params[:name].reverse
   end
 
