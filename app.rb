@@ -15,7 +15,7 @@ class App < Sinatra::Base
     a = ""
     @number = params[:number]
     @phrase = phrase[:phrase]
-    @number.times { str += "#{@phrase}/n" }
+    @number.times { str += "#{@phrase}\n" }
     a
   end
 
